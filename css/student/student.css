@@ -63,14 +63,15 @@ html, body{
 }
 .lists{
     margin: 0;
+    width: 100%;
+    height: 300px;
     list-style: circle;
+    overflow: scroll;
 }
-
 .lists li{
     height: 20px;
     line-height: 20px;
 }
-
 .txt{
     width: 40px;
     font-weight: normal;
