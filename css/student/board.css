@@ -18,7 +18,7 @@
     height: 500px;
 }
 .board-info{
-    margin: 10px auto;
+    margin: 0 auto;
     display: block;
     width: 500px;
     height: 30px;
@@ -37,6 +37,9 @@
     width: 60px;
 }
 .file_title{
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
     width: 340px;
 }
 .file_time{
@@ -63,8 +66,32 @@
 .board-list{
     width: 500px;
     height: 50px;
-    padding: 6px 10px;
     border-bottom: 1px solid #d7d7d7;
+}
+.file_base{
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.file_num_box{width: 60px;}
+.file_title_box{
+    width: 340px;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+.file_time_box{width: 100px;}
+.text-data{font-size: 12px;}
+.board_editBtn{
+    background-color: white;
+    color: black;
+    border: 1px solid #d7d7d7;
+    font-size: 6px;
+    width: 40px;
+    height: 20px;
 }
 /*****************/
 
