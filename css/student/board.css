@@ -11,35 +11,19 @@
 }
 
 .board{
-    margin-top: 30px;
-    margin-left: 20px;
+    margin: 0 auto;
     width: 500px;
-    height: 400px;
+    height: 500px;
 }
-.board_list{
-    margin-bottom: 15px;
-    width: 450px;
+.board-select{
+    width: 100px;
     height: 30px;
-    border-bottom: 1px solid #d7d7d7;
-    line-height: 30px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: lighter;
+    background-color: #f0f0f0;
+    color: #000000;
+    border: none;
 }
-.num{
-    font-weight: normal;
-    font-size: 0.8rem;
-    color: #3c3c3c;
-}
-
-.board_bottom{
-    width: 100%;
-    height: 50px;
-}
-.btn_box{
-    width: 150px;
-    height: 50px;
+#search_btn{
+    margin-left: 10px;
 }
 .writing{
     background-color: #278eff;
