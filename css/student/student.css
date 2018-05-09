@@ -67,7 +67,7 @@ html, body{
     width: 100%;
     height: 300px;
     list-style: circle;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 .lists li{
     margin-left: 20px;
