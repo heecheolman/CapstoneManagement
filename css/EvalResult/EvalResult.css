@@ -93,6 +93,7 @@ input[type=text]:focus {
     padding: 0;
     list-style: none;
     height: 100px;
+    overflow: scroll;
     /*background-color: blue;*/
     /*width: 300px;*/
 }
@@ -208,3 +209,26 @@ textarea{
 }
 
 /****** 평가지 양식끝 ******/
+
+.id-box {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 20px;
+}
+.name-box {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    padding-left: 10px;
+}
+.id {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+}
+.name {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+}
