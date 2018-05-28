@@ -10,7 +10,7 @@
 </head>
 <body class="flex-center-row">
 <div class="center_box">
-    <form action="showFinalResult.do" method="post" name="finalresult">
+    <form action="showFinalResult.do" method="post" name="finalresult" onsubmit="return formCheck()">
         <div class="title_box">
             <span class="_title">졸업작품 최종 심사서</span>
         </div>
@@ -95,11 +95,12 @@
         <div class="result_box">
             <div class="lastEval_box">
                 <ul class="btn_box flex-space-row">
-                    <button class="option-button" name="com1" value="confirmed">확인</button>
+                    <input type="submit" class="option-button" name="com1" value="확인">
                 </ul>
             </div>
         </div>
     </form>
 </div>
+<script src="./src/checkButton.js"></script>
 </body>
 </html>
