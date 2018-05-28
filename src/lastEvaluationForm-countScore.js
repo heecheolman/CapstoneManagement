@@ -1,7 +1,3 @@
-(function() {
-  var score = document.getElementById('result');
-  var sum = 0;
-})();
 
 (function() {
   var score = document.getElementById('result');
