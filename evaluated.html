@@ -14,7 +14,7 @@
         <div class="title_box">
             <span class="_title">졸업작품 최종 심사서</span>
         </div>
-        <div class="evalForm_box">
+        <div class="evalForm_box flex-center-column">
             <div class="classInfo_box flex-space-row">
                 <ul class="left_box left_txt">
                     <li class="left_li">조 이름</li>
@@ -22,7 +22,7 @@
                 </ul>
                 <ul class="right_box">
                     <li class="right_li">
-                        <span>${teamName}</span>
+                        <span class="team-name">${teamName}</span>
                     </li>
                     <c:forEach var="stu" items="${memberList}">
                         <li class="right_li flex-center-row">
@@ -42,34 +42,21 @@
                         교수 평가 결과
                     </div>
                     <div class="lists flex-center-column">
-                        <div class="list-wrap flex-center-row">
-                            <div class="mini-tit-wrap">
-                                <span class="mini-tit">프로젝트 이름</span>
-                            </div>
-                            <div class="mini-val-wrap">
-                                <span class="mini-val">${List.proName}</span>
-                            </div>
+                        <div class="row-box flex-center-row">
+                            <div class="col first">교수명</div>
+                            <div class="col second">점수</div>
+                            <div class="col third">결과</div>
                         </div>
-                        <div class="list-wrap flex-center-row">
-                            <div class="mini-tit-wrap">
-                                <span class="mini-tit">점수</span>
-                            </div>
-                            <div class="mini-val-wrap">
-                                <span class="mini-val">${List.total}</span>
-                            </div>
-                        </div>
-                        <div class="list-wrap flex-center-row">
-                            <div class="mini-tit-wrap">
-                                <span class="mini-tit">결과</span>
-                            </div>
-                            <div class="mini-val-wrap">
-                                <span class="mini-val">${List.result}</span>
+                        <div class="list-box">
+                            <div class="list-ele-box flex-center-row">
+                                <div class="col first">${List.proName}</div>
+                                <div class="col second">${List.total}</div>
+                                <div class="col third">${List.result}</div>
                             </div>
                         </div>
                     </div>
-                    <!--<c:forEach var="List" items="${EvalResultList}" varStatus="status">-->
-                        <!--<span>${List.proName}&nbsp;&nbsp;${List.total}&nbsp;&nbsp;${List.result}</span><br>-->
-                    <!--</c:forEach><br>-->
+                    <!--<div class="col second">${List.proName}</div>-->
+
                     <div class="sub-tit">
                         교수 평가 평균 점수
                     </div>
