@@ -12,7 +12,6 @@ input{outline: 0;}
 input[type=text]:focus {
     border: 1px solid #555;
 }
-
 .flex-center-row{
     display: flex;
     justify-content: center;
@@ -51,51 +50,41 @@ input[type=text]:focus {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .title_box{
-    margin: 20px auto 30px auto;
-    /*margin-top: 30px;*/
-    /*margin-bottom: 60px;*/
     width: 100%;
-    height: 30px;
+    height: auto;
     text-align: center;
-    line-height: 60px;
 }
 ._title{
     color: #111111;
-    font-size: 2em;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 .evalForm_box{
-    overflow-x: hidden;
-    overflow-y: scroll;
     margin: 0 auto;
     padding: 5px;
     width: 350px;
-    height: 400px;
+    height: 430px;
 }
+
 
 
 /****** 주제 팀장 팀원 ******/
 .classInfo_box{
     width: 350px;
-    height: 110px;
-    /*background-color: yellow;*/
+    height: 100px;
 }
 .left_box{
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 100px;
-    /*background-color: white;*/
+    height: 50px;
     width: 60px;
 }
 .right_box{
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 100px;
-    overflow: scroll;
-    /*background-color: blue;*/
-    /*width: 300px;*/
+    height: 50px;
 }
 .left_txt{
     font-size: 10px;
@@ -114,6 +103,7 @@ input[type=text]:focus {
     height: 25px;
     text-align: center;
     line-height: 25px;
+    border-bottom: 1px solid #ededed;
 }
 /****** 주제 팀장 팀원 끝 ******/
 
@@ -121,20 +111,22 @@ input[type=text]:focus {
 
 /****** 평가지 양식시작 ******/
 .check_box{
-    margin: 30px auto 0 auto;
     width: 350px;
     height: auto;
 }
 .question_box{
     width: 350px;
-    height: 150px;
+    height: auto;
     margin-bottom: 10px;
-    border-bottom: 1px solid #d7d7d7;
 }
 .question_txt{
     margin-left: 10px;
     font-size: 14px;
     font-weight: normal;
+}
+.btn-wrapper {
+    width: 100%;
+    height: 50px;
 }
 .btn_box{
     margin: 0;
@@ -153,8 +145,6 @@ input[type=text]:focus {
     width: 100%;
     height: 30px;
     line-height: 30px;
-    /*width: 100%;*/
-    /*height: 12px;*/
     font-size: 12px;
     font-weight: normal;
 }
@@ -162,7 +152,7 @@ textarea{
     display: block;
     margin-left: 10px;
     width: 300px;
-    height: 40px;
+    height: auto;
     padding: 4px 2px;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -170,30 +160,28 @@ textarea{
     background-color: #f8f8f8;
     resize: none;
 }
-.result_box{
-    padding: 10px 0;
+
+
+.eval_txt{
+    font-size: 15px;
+    font-weight: bold;
+}
+.score-box {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.lastEval_box{
     margin: 0 auto;
     width: 350px;
     height: auto;
 }
-.lastEval_box{
-    margin: 0 auto;
+.result_box{
     width: 350px;
-    height: 50px;
-}
-.eval-txt{
-    font-size: 15px;
-    font-weight: bold;
-}
-.eval-score {
-    font-size: 15px;
-    font-weight: normal;
-    color: #278eff;
-}
-
-.option-box {
-    width: 100%;
-    height: 50px;
+    height: auto;
 }
 .option-button {
     border: none;
@@ -204,11 +192,70 @@ textarea{
     cursor: pointer;
     border-radius: 15px;
 }
-.option-button:hover {
-    box-shadow: 0 3px 8px rgba(104, 104, 104, 0.25), 0 5px 5px rgba(153, 153, 153, 0.22);
-}
 
 /****** 평가지 양식끝 ******/
+
+
+.sub-tit {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.lists {
+    width: 100%;
+    height: 80px;
+}
+.list-wrap {
+    width: 100%;
+    height: 20px;
+}
+.mini-tit-wrap {
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    display: inline-block;
+}
+.mini-val-wrap {
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.mini-tit {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.mini-val {
+    color: #2a2a2a;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.comment-box {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+}
+.comment {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+}
+.radio-check-box {
+    width: 100%;
+    height: 30px;
+}
 
 .id-box {
     display: inline-block;
@@ -232,23 +279,43 @@ textarea{
     font-size: 12px;
     font-weight: 300;
 }
+.team-name {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+}
 
-#print {
-    position: fixed;
-    left: 10px;
-    top: 50%;
+.row-box {
+    /*350px;*/
+    width: 100%;
+    height: 20px;
 }
-#print a {
-    color: #ffffff;
-    text-decoration: none;
+.col {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
 }
-.printBtn {
-    width: 50px;
+.first {
+    width: 90px;
+}
+.second {
+    width: 100px;
+}
+.third {
+    width: 70px;
+}
+.list-box {
+    width: 100%;
+    height: 80px;
+}
+.list-ele-box {
+    width: 100%;
+    height: 20px;
+}
+
+.scroll-box {
     height: 50px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.printBtn:hover {
-    margin-left: 5px;
 }
